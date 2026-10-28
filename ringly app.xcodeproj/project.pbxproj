@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28474FDFB2438A227C38223A /* Pods_NotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A86113D2990348E378D633B /* Pods_NotificationService.framework */; };
+		4F89604E2FE509B400017CE6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4F89604D2FE509B400017CE6 /* GoogleSignIn */; };
+		4F8960502FE509B400017CE6 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F89604F2FE509B400017CE6 /* GoogleSignInSwift */; };
+		9F55CFFD2FEE4BF200D0B900 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 9F55CFFC2FEE4BF200D0B900 /* WebRTC */; };
+		9FFCE0322FED8A2200B459E2 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FFCE02B2FED8A2200B459E2 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF15493E2E8379FD6EB9A639 /* LibXray.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D482C4296C26C93F4BD635 /* LibXray.xcframework */; };
+		B55CCA7CA5A3A12B8BA614B7 /* Pods_ringly_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FA84CDE5799BFFB1F31C28 /* Pods_ringly_app.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FFCE0302FED8A2200B459E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F327ACA2FDB655500A5FD45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FFCE02A2FED8A2200B459E2;
+			remoteInfo = NotificationService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FFCE0372FED8A2300B459E2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9FFCE0322FED8A2200B459E2 /* NotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4023B47EDF9CD9EA98C02F0F /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		42D482C4296C26C93F4BD635 /* LibXray.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = LibXray.xcframework; path = Frameworks/LibXray.xcframework; sourceTree = SOURCE_ROOT; };
+		4F327AD22FDB655500A5FD45 /* ringly app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ringly app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A86113D2990348E378D633B /* Pods_NotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FFCE02B2FED8A2200B459E2 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD993FFAB11810845D2B0A82 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		B4FA84CDE5799BFFB1F31C28 /* Pods_ringly_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ringly_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D916A75696A1E2052C32ED9C /* Pods-ringly app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ringly app.release.xcconfig"; path = "Target Support Files/Pods-ringly app/Pods-ringly app.release.xcconfig"; sourceTree = "<group>"; };
+		F5873E6119D3BA1D95F02005 /* Pods-ringly app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ringly app.debug.xcconfig"; path = "Target Support Files/Pods-ringly app/Pods-ringly app.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9FFCE0332FED8A2300B459E2 /* Exceptions for "NotificationService" folder in "NotificationService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9FFCE02A2FED8A2200B459E2 /* NotificationService */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4F327AD42FDB655500A5FD45 /* ringly app */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ringly app";
+			sourceTree = "<group>";
+		};
+		9FFCE02C2FED8A2200B459E2 /* NotificationService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9FFCE0332FED8A2300B459E2 /* Exceptions for "NotificationService" folder in "NotificationService" target */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		AA11BB22CC33DD44EE55F001 /* RinglyCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RinglyCore;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F327ACF2FDB655500A5FD45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F89604E2FE509B400017CE6 /* GoogleSignIn in Frameworks */,
+				9F55CFFD2FEE4BF200D0B900 /* WebRTC in Frameworks */,
+				4F8960502FE509B400017CE6 /* GoogleSignInSwift in Frameworks */,
+				B55CCA7CA5A3A12B8BA614B7 /* Pods_ringly_app.framework in Frameworks */,
+				AF15493E2E8379FD6EB9A639 /* LibXray.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFCE0282FED8A2200B459E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28474FDFB2438A227C38223A /* Pods_NotificationService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F327AC92FDB655500A5FD45 = {
+			isa = PBXGroup;
+			children = (
+				4F327AD42FDB655500A5FD45 /* ringly app */,
+				AA11BB22CC33DD44EE55F001 /* RinglyCore */,
+				9FFCE02C2FED8A2200B459E2 /* NotificationService */,
+				4F327AD32FDB655500A5FD45 /* Products */,
+				817E9557DCE050A8D50D8594 /* Pods */,
+				8F36F3A5D30A4319E58510D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F327AD32FDB655500A5FD45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F327AD22FDB655500A5FD45 /* ringly app.app */,
+				9FFCE02B2FED8A2200B459E2 /* NotificationService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		817E9557DCE050A8D50D8594 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5873E6119D3BA1D95F02005 /* Pods-ringly app.debug.xcconfig */,
+				D916A75696A1E2052C32ED9C /* Pods-ringly app.release.xcconfig */,
+				AD993FFAB11810845D2B0A82 /* Pods-NotificationService.debug.xcconfig */,
+				4023B47EDF9CD9EA98C02F0F /* Pods-NotificationService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F36F3A5D30A4319E58510D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4FA84CDE5799BFFB1F31C28 /* Pods_ringly_app.framework */,
+				7A86113D2990348E378D633B /* Pods_NotificationService.framework */,
+				42D482C4296C26C93F4BD635 /* LibXray.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F327AD12FDB655500A5FD45 /* ringly app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F327ADD2FDB655700A5FD45 /* Build configuration list for PBXNativeTarget "ringly app" */;
+			buildPhases = (
+				80D7720A8CB4B292B30C7C95 /* [CP] Check Pods Manifest.lock */,
+				4F327ACE2FDB655500A5FD45 /* Sources */,
+				4F327ACF2FDB655500A5FD45 /* Frameworks */,
+				4F327AD02FDB655500A5FD45 /* Resources */,
+				3F31F167ACBC64FAC52F5DA2 /* [CP] Embed Pods Frameworks */,
+				9FFCE0372FED8A2300B459E2 /* Embed Foundation Extensions */,
+				AA11BB22CC33DD44EE55A001 /* Auto build number */,
+				D0CDBD9FBF48945CE16F63BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FFCE0312FED8A2200B459E2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4F327AD42FDB655500A5FD45 /* ringly app */,
+				AA11BB22CC33DD44EE55F001 /* RinglyCore */,
+			);
+			name = "ringly app";
+			packageProductDependencies = (
+				4F89604D2FE509B400017CE6 /* GoogleSignIn */,
+				4F89604F2FE509B400017CE6 /* GoogleSignInSwift */,
+				9F55CFFC2FEE4BF200D0B900 /* WebRTC */,
+			);
+			productName = "ringly app";
+			productReference = 4F327AD22FDB655500A5FD45 /* ringly app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FFCE02A2FED8A2200B459E2 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FFCE0342FED8A2300B459E2 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				59D3BB4F65E24894B743EF9B /* [CP] Check Pods Manifest.lock */,
+				9FFCE0272FED8A2200B459E2 /* Sources */,
+				9FFCE0282FED8A2200B459E2 /* Frameworks */,
+				9FFCE0292FED8A2200B459E2 /* Resources */,
+				AA11BB22CC33DD44EE55A002 /* Auto build number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9FFCE02C2FED8A2200B459E2 /* NotificationService */,
+				AA11BB22CC33DD44EE55F001 /* RinglyCore */,
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = 9FFCE02B2FED8A2200B459E2 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F327ACA2FDB655500A5FD45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					4F327AD12FDB655500A5FD45 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					9FFCE02A2FED8A2200B459E2 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 4F327ACD2FDB655500A5FD45 /* Build configuration list for PBXProject "ringly app" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F327AC92FDB655500A5FD45;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F89604C2FE509B400017CE6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				9F55CFFB2FEE4BF200D0B900 /* XCRemoteSwiftPackageReference "WebRTC" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4F327AD32FDB655500A5FD45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F327AD12FDB655500A5FD45 /* ringly app */,
+				9FFCE02A2FED8A2200B459E2 /* NotificationService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F327AD02FDB655500A5FD45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFCE0292FED8A2200B459E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F31F167ACBC64FAC52F5DA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ringly app/Pods-ringly app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ringly app/Pods-ringly app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ringly app/Pods-ringly app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59D3BB4F65E24894B743EF9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D7720A8CB4B292B30C7C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ringly app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA11BB22CC33DD44EE55A001 /* Auto build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto build number = git commit count (одинаковый у приложения и расширения).\n# ⚠️ БЕЗ запасного значения. Тихий фолбэк «|| echo 1» уже развёл CFBundleVersion приложения\n# и расширения (37 против 1) — загрузка упала бы с ITMS-90473, причём незаметно на сборке.\n# Лучше сломать сборку здесь, чем узнать об этом от App Store Connect.\nset -euo pipefail\nn=$(git -C \"$SRCROOT\" rev-list --count HEAD)\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ ! -f \"$plist\" ]; then\n  echo \"error: не найден $plist — некуда писать CFBundleVersion\" >&2\n  exit 1\nfi\n# Release (TestFlight/App Store) обязан называться «Ringly». Поле Display Name на вкладке General\n# правит имя во ВСЕХ конфигурациях разом — так в TestFlight уже трижды уехало «Ringly Dev».\n# Сверяем НАСТРОЙКУ сборки, а не готовый Info.plist: Xcode не гарантирует, что этот скрипт\n# идёт после ProcessInfoPlistFile, и файл может остаться от прошлой сборки.\nif [ \"$CONFIGURATION\" = \"Release\" ]; then\n  name=\"${INFOPLIST_KEY_CFBundleDisplayName:-}\"\n  if [ \"$name\" != \"Ringly\" ]; then\n    echo \"error: Release-сборка называется «$name», а должна «Ringly» (INFOPLIST_KEY_CFBundleDisplayName в конфигурации Release)\" >&2\n    exit 1\n  fi\nfi\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $n\" \"$plist\"\necho \"note: CFBundleVersion set to $n\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA11BB22CC33DD44EE55A002 /* Auto build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Auto build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Auto build number = git commit count (одинаковый у приложения и расширения).\n# ⚠️ БЕЗ запасного значения. Тихий фолбэк «|| echo 1» уже развёл CFBundleVersion приложения\n# и расширения (37 против 1) — загрузка упала бы с ITMS-90473, причём незаметно на сборке.\n# Лучше сломать сборку здесь, чем узнать об этом от App Store Connect.\nset -euo pipefail\nn=$(git -C \"$SRCROOT\" rev-list --count HEAD)\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ ! -f \"$plist\" ]; then\n  echo \"error: не найден $plist — некуда писать CFBundleVersion\" >&2\n  exit 1\nfi\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $n\" \"$plist\"\necho \"note: CFBundleVersion set to $n\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0CDBD9FBF48945CE16F63BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ringly app/Pods-ringly app-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ringly app/Pods-ringly app-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ringly app/Pods-ringly app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F327ACE2FDB655500A5FD45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FFCE0272FED8A2200B459E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FFCE0312FED8A2200B459E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FFCE02A2FED8A2200B459E2 /* NotificationService */;
+			targetProxy = 9FFCE0302FED8A2200B459E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F327ADB2FDB655700A5FD45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RN2V3C7QPU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F327ADC2FDB655700A5FD45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = RN2V3C7QPU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F327ADE2FDB655700A5FD45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5873E6119D3BA1D95F02005 /* Pods-ringly app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ringly app/ringly app.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = H3K8JBTFM4;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ringly-app-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ringly Dev";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = YES;
+				INFOPLIST_KEY_ITSEncryptionExportComplianceCode = "1afd0e7d-33d9-4555-99b1-410d6f70edf2";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Камера нужна для видеозвонков.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID нужен, чтобы открывать Ringly без ввода код-пароля.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Микрофон нужен для аудио- и видеозвонков.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Чтобы сохранять фото и видео из переписки в вашу медиатеку.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Чтобы прикреплять фото и видео к сообщениям.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reguzov.ringly-app.dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) RINGLY_BRIDGE_TUNNEL";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4F327ADF2FDB655700A5FD45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D916A75696A1E2052C32ED9C /* Pods-ringly app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ringly app/ringly app Release.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = H3K8JBTFM4;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ringly-app-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Ringly;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = YES;
+				INFOPLIST_KEY_ITSEncryptionExportComplianceCode = "1afd0e7d-33d9-4555-99b1-410d6f70edf2";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Камера нужна для видеозвонков.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Face ID нужен, чтобы открывать Ringly без ввода код-пароля.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Микрофон нужен для аудио- и видеозвонков.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Чтобы сохранять фото и видео из переписки в вашу медиатеку.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Чтобы прикреплять фото и видео к сообщениям.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lresolv",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reguzov.ringly-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) RINGLY_BRIDGE_TUNNEL";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9FFCE0352FED8A2300B459E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD993FFAB11810845D2B0A82 /* Pods-NotificationService.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "NotificationService/NotificationService Debug.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = H3K8JBTFM4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reguzov.ringly-app.dev.NotificationService";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9FFCE0362FED8A2300B459E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4023B47EDF9CD9EA98C02F0F /* Pods-NotificationService.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = H3K8JBTFM4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.reguzov.ringly-app.NotificationService";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F327ACD2FDB655500A5FD45 /* Build configuration list for PBXProject "ringly app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F327ADB2FDB655700A5FD45 /* Debug */,
+				4F327ADC2FDB655700A5FD45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F327ADD2FDB655700A5FD45 /* Build configuration list for PBXNativeTarget "ringly app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F327ADE2FDB655700A5FD45 /* Debug */,
+				4F327ADF2FDB655700A5FD45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FFCE0342FED8A2300B459E2 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FFCE0352FED8A2300B459E2 /* Debug */,
+				9FFCE0362FED8A2300B459E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F89604C2FE509B400017CE6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+		9F55CFFB2FEE4BF200D0B900 /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 149.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F89604D2FE509B400017CE6 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F89604C2FE509B400017CE6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		4F89604F2FE509B400017CE6 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F89604C2FE509B400017CE6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		9F55CFFC2FEE4BF200D0B900 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F55CFFB2FEE4BF200D0B900 /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4F327ACA2FDB655500A5FD45 /* Project object */;
+}

@@ -1,0 +1,63 @@
+PODS:
+  - GRDB.swift/SQLCipher (6.24.1):
+    - SQLCipher (>= 3.4.2)
+  - IronSourceAdQualitySDK (9.10.0)
+  - IronSourceSDK (9.5.0.0):
+    - IronSourceSDK/AdQuality (= 9.5.0.0)
+    - IronSourceSDK/Ads (= 9.5.0.0)
+  - IronSourceSDK/AdQuality (9.5.0.0):
+    - IronSourceAdQualitySDK (~> 9)
+  - IronSourceSDK/Ads (9.5.0.0)
+  - IronSourceUnityAdsAdapter (5.9.0.0):
+    - IronSourceSDK/Ads (~> 9.0)
+    - UnityAds (= 4.19.0)
+  - LibSignalClient (0.96.2)
+  - SQLCipher (4.10.0):
+    - SQLCipher/standard (= 4.10.0)
+  - SQLCipher/common (4.10.0)
+  - SQLCipher/standard (4.10.0):
+    - SQLCipher/common
+  - UnityAds (4.19.0):
+    - IronSourceAdQualitySDK (< 10.0.0)
+    - UnityCoherenceLib (= 0.1.0)
+  - UnityCoherenceLib (0.1.0)
+
+DEPENDENCIES:
+  - GRDB.swift/SQLCipher
+  - IronSourceSDK (= 9.5.0.0)
+  - IronSourceUnityAdsAdapter (= 5.9.0.0)
+  - LibSignalClient (from `https://github.com/signalapp/libsignal.git`, tag `v0.96.2`)
+
+SPEC REPOS:
+  trunk:
+    - GRDB.swift
+    - IronSourceAdQualitySDK
+    - IronSourceSDK
+    - IronSourceUnityAdsAdapter
+    - SQLCipher
+    - UnityAds
+    - UnityCoherenceLib
+
+EXTERNAL SOURCES:
+  LibSignalClient:
+    :git: https://github.com/signalapp/libsignal.git
+    :tag: v0.96.2
+
+CHECKOUT OPTIONS:
+  LibSignalClient:
+    :git: https://github.com/signalapp/libsignal.git
+    :tag: v0.96.2
+
+SPEC CHECKSUMS:
+  GRDB.swift: 136dcb5d8dddca50aae3ba7d77475f79e7232cd8
+  IronSourceAdQualitySDK: 779fc3754f27b3d5fae8da52c5709a2dbdb502a6
+  IronSourceSDK: 49ea480ee16cebcdfb98f7cad08eef1eb17661ed
+  IronSourceUnityAdsAdapter: d941b1bdb41e7d65054c044ee5dd1f639e664381
+  LibSignalClient: 21e99febafce35235cd213eaed530e32c4bab809
+  SQLCipher: eb79c64049cb002b4e9fcb30edb7979bf4706dfc
+  UnityAds: 40804188247edc15e4e173450a749dbb2fbc61c5
+  UnityCoherenceLib: d9be08c5b9c2880cb220c7ecd643f97ebda422b7
+
+PODFILE CHECKSUM: 3b5b29c6b944c758ae21b7c7e015fd388fe467a1
+
+COCOAPODS: 1.16.2

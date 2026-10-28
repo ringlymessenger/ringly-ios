@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Трекинга нет (решение владельца, октябрь 2026): реклама Unity LevelPlay без окна ATT, то
+	     есть без рекламного ID (IDFA). Свои сборы данных SDK объявляет в собственном манифесте
+	     внутри пода; трекинговые домены SDK iOS сам блокирует, пока нет согласия ATT.
+	     ⚠️ Если когда-нибудь включать ATT — поменять на <true/>, добавить NSPrivacyTrackingDomains и
+	     синхронно обновить анкету App Privacy в App Store Connect. -->
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+
+	<!-- ⚠️ Должно совпадать с анкетой App Privacy в App Store Connect.
+	     Содержимое переписки, звонков и профиля здесь не указано намеренно: оно зашифровано
+	     сквозным шифрованием и недоступно нам (см. docs/privacy-policy.md §4.1). -->
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeUserID</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<true/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+	</array>
+
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<!-- UserDefaults: флаги регистрации ключей, protocolDeviceId/registrationId и т.п.
+		     Часть лежит в App Group (общий доступ приложения и NSE) → 1C8F.1 вдобавок к CA92.1. -->
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+				<string>1C8F.1</string>
+			</array>
+		</dict>
+		<!-- Временные метки файлов: LRU-кэш мелодий-гудков в контейнере приложения
+		     (Calls/RingbackPlayer.swift — setAttributes(.modificationDate) + contentModificationDateKey). -->
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>C617.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

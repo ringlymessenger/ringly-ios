@@ -1,0 +1,30 @@
+# Xcode
+DerivedData/
+.build/
+
+# User settings
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Обход блокировок: xcframework ~256 МБ (бинарник устройства — 90 МБ), в git не кладётся —
+# GitHub предупреждает с 50 МБ и отказывает со 100 МБ. Собирается на месте, как и Pods:
+#   ./scripts/build-libxray.sh
+Frameworks/LibXray.xcframework/
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# macOS
+.DS_Store
+
+docs-shared
+
+CLAUDE.md
