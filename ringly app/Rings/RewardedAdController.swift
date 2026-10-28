@@ -30,7 +30,9 @@ final class RewardedAdController: NSObject {
     // Test Suite LevelPlay (скрытое меню → «Тест рекламы»): показывает идентификатор, который SDK
     // реально отправляет (нужен для Test devices в дашборде), и проверяет загрузку/показ. Флаг
     // `is_test_suite` SDK принимает только ДО инициализации, поэтому он запоминается на устройстве:
-    // если SDK уже поднят без него, тест откроется после перезапуска приложения.
+    // если SDK уже поднят без него, тест откроется после перезапуска приложения. Флаг одноразовый —
+    // забирается при следующем запуске SDK, иначе одно нажатие навсегда оставляло SDK в режиме отладки.
+    // Только Debug и TestFlight (`AppConfig.testingToolsEnabled`): в App Store-сборке теста нет.
     nonisolated private static let testSuiteKey = "ads.testSuite"
     enum TestSuiteResult { case launching, needsRestart, unavailable }
 
@@ -54,8 +56,11 @@ final class RewardedAdController: NSObject {
         AdConsent.apply()
 
         if UserDefaults.standard.bool(forKey: Self.testSuiteKey) {
-            LevelPlay.setMetaDataWithKey("is_test_suite", value: "enable")
-            testSuiteEnabled = true
+            UserDefaults.standard.removeObject(forKey: Self.testSuiteKey)
+            if AppConfig.testingToolsEnabled {
+                LevelPlay.setMetaDataWithKey("is_test_suite", value: "enable")
+                testSuiteEnabled = true
+            }
         }
 
         // userId → [USER_ID] в S2S-колбэке. Без него сервер не поймёт, кому начислить.
@@ -111,8 +116,11 @@ final class RewardedAdController: NSObject {
 
     func openTestSuite(from presenter: UIViewController) -> TestSuiteResult {
         // для ЕС без ответа на запрос согласия SDK не поднимается — сначала открыть экран Rings
-        guard Self.adsAvailable, !AdConsent.needsAnswer, AuthState.myUserId != nil else { return .unavailable }
-        UserDefaults.standard.set(true, forKey: Self.testSuiteKey)
+        guard AppConfig.testingToolsEnabled, Self.adsAvailable, !AdConsent.needsAnswer, AuthState.myUserId != nil
+        else { return .unavailable }
+        // флаг ставим, только если SDK ещё будет запускаться с ним: в уже включённом тестовом режиме
+        // он лишь продлил бы этот режим на следующий запуск приложения
+        if !testSuiteEnabled { UserDefaults.standard.set(true, forKey: Self.testSuiteKey) }
         // SDK уже поднят (или поднимается) без флага — включить тест можно только перезапуском
         if (initialized || initializing) && !testSuiteEnabled { return .needsRestart }
         if initialized {

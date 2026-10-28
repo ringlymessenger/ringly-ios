@@ -339,7 +339,7 @@ public final class EndpointResolver {
     // Мостики (их проверка идёт через свою сессию с туннелем) и TCP-пинг не затронуты — то есть
     // ровно то, что видит человек, у которого заблокирован адрес сервера. DPI так не воспроизвести.
     // Флаг в App Group: NSE тоже ходит напрямую и при настоящей блокировке так же не достучится.
-    public var simulateBlock: Bool { defaults.bool(forKey: simulateBlockKey) }
+    public var simulateBlock: Bool { AppConfig.testingToolsEnabled && defaults.bool(forKey: simulateBlockKey) }
 
     public func setSimulateBlock(_ on: Bool) {
         lock.lock()

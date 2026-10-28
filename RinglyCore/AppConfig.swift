@@ -29,6 +29,20 @@ enum AppConfig {
         #endif
     }()
 
+    // Служебные инструменты (тест рекламы, имитация блокировок сети и звонков) — только в Debug и
+    // TestFlight, в публичной App Store-сборке их быть не должно (решение владельца). TestFlight и
+    // App Store получают ОДИН бинарник, поэтому TestFlight различаем во время работы: у его установки
+    // чек песочницы `sandboxReceipt` (так же делает Signal). Не вышло определить → считаем App Store:
+    // ошибка в эту сторону лишь прячет инструменты. Флаги, включённые в TestFlight, после обновления
+    // из App Store тоже перестают действовать — иначе имитация блокировки осталась бы без выключателя.
+    static let testingToolsEnabled: Bool = {
+        #if DEBUG
+        return true
+        #else
+        return Bundle.main.appStoreReceiptURL?.lastPathComponent == "sandboxReceipt"
+        #endif
+    }()
+
     // Базовый адрес REST API.
     static var apiBaseURL: URL { current.apiBaseURL }
 

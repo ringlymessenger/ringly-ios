@@ -25,7 +25,7 @@ enum CallSettings {
     // недоступен и прямое соединение не проходит, звонок может идти ТОЛЬКО через волонтёрский TURN
     // (GET /relays/turn-pair). Нет волонтёрских — звонок честно не соединяется. DPI так не воспроизвести.
     static var simulateBlock: Bool {
-        get { UserDefaults.standard.bool(forKey: simulateBlockKey) }
+        get { AppConfig.testingToolsEnabled && UserDefaults.standard.bool(forKey: simulateBlockKey) }
         set { UserDefaults.standard.set(newValue, forKey: simulateBlockKey) }
     }
 
